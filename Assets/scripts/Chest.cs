@@ -24,7 +24,7 @@ namespace TextRPG {
             }
             else if (Random.Range(0, 5) == 2)
             {
-                Enemy = EnemyDatabase.Instance.Enemies[Random.Range(0, EnemyDatabase.Instance.Enemies.Count)];
+                Enemy = EnemyDatabase.Instance.GetRandomEnemy();
             }
             else
             {
