@@ -20,5 +20,10 @@ namespace TextRPG
             }
         }
 
+        public Enemy GetRandomEnemy()
+        {
+            return Enemies[Random.Range(0, Enemies.Count)];
+        }
+
     }
 }
